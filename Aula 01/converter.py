@@ -8,11 +8,11 @@ class Converter:
         converted_donation = self.convert_donation(self.donation)
         self.print_donation(converted_donation)
 
-    def convert_donation(self, donation):
-        return self.dolar * float(donation)
-
     def get_donation(self):
         self.donation = input("Digite o valor da doação: ")
+
+    def convert_donation(self, donation):
+        return self.dolar * float(donation)
 
     def print_donation(self, donation):
         print(f"Valor doado em reais R${donation}")
